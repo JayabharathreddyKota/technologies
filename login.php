@@ -5,7 +5,7 @@ include 'User.php';
 $user = new User('php_login_system', '127.0.0.1', 'root', 'root');
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = $_POST['passwd'];
 
 if ($user->exists($username, $password)) {
     $_SESSION['login'] = true;
